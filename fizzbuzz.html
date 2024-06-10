@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(35, 33, 33);">
+    <script>
+        console.log("-------fizzBuzz-----");    
+        FizzBuzz([1,23,4,5123,90,15]);
+function FizzBuzz(arrayname){
+        for (i=0;i<=arrayname.length;i++)
+        {
+            if(arrayname[i] % 3 === 0 && arrayname[i] % 5 === 0){
+                console.log('FizzBuzz');
+            }
+            else if(arrayname[i] % 3 === 0){
+                console.log('Fizz');
+            }
+            else if(arrayname[i] % 5 === 0){
+                console.log('Buzz');
+            }
+            else{
+                console.log(arrayname[i]);
+            }
+        }
+    }
+    </script>
+</body>
+</html>
